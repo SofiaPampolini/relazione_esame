@@ -1,0 +1,22 @@
+# Java
+target/
+*.class
+
+# Maven
+pom.xml.tag
+
+# Node
+node_modules/
+/dist/
+
+# IntelliJ
+.idea/
+
+# Mac
+.DS_Store
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
