@@ -143,7 +143,6 @@ class PrenotazioneControllerTest {
     @Test
     void creaPrenotazione_ListaPostiVuota_Restituisce400BadRequest() {
         // Preparazione dati
-        // ----------------------------------------------------------------------------
         requestValida.setPostiSelezionati(Collections.emptyList());
 
         // Esecuzione metodo da testare
