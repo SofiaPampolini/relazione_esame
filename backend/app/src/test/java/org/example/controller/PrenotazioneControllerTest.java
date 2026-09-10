@@ -30,7 +30,7 @@ import static org.mockito.Mockito.*;
  * simulando il comportamento dei Repository (Mocking).
  */
 @ExtendWith(MockitoExtension.class) // Abilita l'estensione di Mockito per JUnit 5 (gestisce il ciclo di vita dei mock)
-class PrenotazioneControllerUnitTest {
+class PrenotazioneControllerTest {
 
     // Dipendenze fittizie (Mock) simulate per evitare chiamate al database
     @Mock
