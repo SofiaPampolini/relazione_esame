@@ -11,7 +11,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 
 public interface NotificaRepository extends JpaRepository<Notifica, Long>{
-    List<Notifica> findByUsernameAndLettaFalse(String username);
+    @Query(value = "SELECT * FROM notifica WHERE Username = :username AND Letta = 0", nativeQuery = true)
+    List<Notifica> findByUsernameAndLettaFalse(@Param("username") String username);
 
     /**
      * Query derivata per verificare la presenza di una notifica con uno specifico testo per un determinato utente.
